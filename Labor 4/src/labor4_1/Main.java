@@ -23,7 +23,7 @@ public class Main {
 
         scanner = null;
         try {
-            scanner = new Scanner(new File("OOP LABOROK/Labor 4/labor4_1_input.csv"));
+            scanner = new Scanner(new File("Labor 4/labor4_1_input.csv"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             System.exit(1);
