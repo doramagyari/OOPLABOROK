@@ -38,4 +38,11 @@ public class StackInheritance extends ArrayList<Object> {
         }
         return this.get(size()-1);
     }
+    public boolean isFull(){
+        return (this.size() == capacity );
+    }
+
+    public int getSize(){
+        return this.size();
+    }
 }

@@ -17,8 +17,14 @@ public class CheckingAccount extends BankAccount {
 
    @Override
     public boolean withdraw(double ammount){
-        //@todo ujrairni
-       return super.withdraw(ammount);
+        if(this.balance - ammount < (-overdraftLimit)){
+            System.out.println("Invalid withdraw");
+            return false;
+        }
+        else {
+            this.balance -= ammount;
+            return true;
+        }
    }
 
     @Override
