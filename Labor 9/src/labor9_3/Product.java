@@ -1,6 +1,6 @@
 package labor9_3;
 
-public class Product implements Comparable<Product> {
+public class Product  {
     private int ID;
     private String name;
     private int amount;
@@ -43,11 +43,9 @@ public class Product implements Comparable<Product> {
                 '}';
     }
 
-    @Override
     public int compareTo(Product obj) {
         if(obj == null) throw new NullPointerException();
         if(this.ID == obj.ID) return 0;
         return this.ID - obj.ID;
     }
-
 }

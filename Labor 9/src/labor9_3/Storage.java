@@ -1,5 +1,7 @@
 package labor9_3;
 
+import labor9_3.Product;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
