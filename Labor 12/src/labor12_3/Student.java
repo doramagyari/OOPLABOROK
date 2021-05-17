@@ -42,6 +42,18 @@ public class Student {
         return roman;
     }
 
+    public void setMatek(double matek) {
+        this.matek = matek;
+    }
+
+    public void setMagyar(double magyar) {
+        this.magyar = magyar;
+    }
+
+    public void setRoman(double roman) {
+        this.roman = roman;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
